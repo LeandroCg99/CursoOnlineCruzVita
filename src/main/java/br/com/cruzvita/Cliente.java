@@ -2,9 +2,13 @@ package br.com.cruzvita;
 
 public class Cliente {
 	
+	public String nome;
+	public Integer idade;
+//public = modificador de acesso 
+	//String, Integer, Boolean = tipo de retorno
+	
 	public String cliente() {
 		return "classe cliente";
 	}
-//public = modificador de acesso 
-	//tipo de retorno, ex: String, Integer, Boolean
 }
+
