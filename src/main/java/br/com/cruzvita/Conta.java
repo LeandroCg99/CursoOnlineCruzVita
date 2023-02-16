@@ -2,12 +2,23 @@ package br.com.cruzvita;
 
 public class Conta {
 	
-	public String tipoDeConta;
-	public String contaPessoa;
+	public String numConta;
+	public Cliente cliente;
+	public Banco banco;
+	public double saldo = 0;
 	//atributos
 	
-	public String Conta() {
-		return "classe conta";
-	//metodo, todo metodo tem ()
+	//construtor
+		public Conta(String numConta, Cliente cliente, Banco banco, double saldo) {
+		this.numConta = numConta;
+		this.cliente = cliente;
+		this.banco = banco;
+		this.saldo = saldo;
 	}
+	
+	
+	
+	
+	
+	
 }
