@@ -7,24 +7,22 @@ public class Banco {
 	public Conta conta;
 	//atributos
 
-	//construtor
-	public Banco(String nomeBanco, Cliente cliente) {
-		this.nomeBanco = nomeBanco;
-		this.cliente = cliente;
-
-	}
-
 	//metodos
-	public void depositar(double valor) {
-		conta.saldo = conta.saldo + valor;
+	public String nomeBanco() {
+		return "Cruz Vita Bank";
 	}
-
-	public void sacar(double valor) {
-		conta.saldo = conta.saldo - valor;
+	
+	public Cliente Cliente() {
+		return cliente;
 	}
-
-	public void transferir(Conta conta1, Conta conta2, double valor) {
-		conta1.saldo = conta1.saldo - valor;
-		conta2.saldo = conta2.saldo + valor;
+	
+	public Conta Conta() {
+		return conta;
 	}
+    //metodo              parametro
+//	public void depositar(double valor) {
+//		double saldoAtual = conta.Saldo();
+//        double novoSaldo = saldoAtual + valor;
+//      
+	
 }
