@@ -41,9 +41,9 @@ public class Conta {
 		saldo = saldo - valorSaque;
 	}
 	
-	public void transferir(double valor, Conta contaBase, Conta contaUsuario) {
-		contaBase.saldo = contaBase.saldo - valor;
-		contaUsuario.saldo = contaUsuario.saldo + valor;
+	public void transferir(double valor, Conta contaDestino) {
+		this.sacar(valor);
+		contaDestino.depositar(valor);
 	}
 
 }

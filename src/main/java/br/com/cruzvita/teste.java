@@ -12,6 +12,7 @@ public class teste {
 		Banco banco = new Banco();
 		Cliente cliente = new Cliente();
 		Conta conta = new Conta();
+		Conta conta2 = new Conta();
 
 		System.out.println("Bem vindo ao " + banco.nomeBanco());
 		System.out.println("Realize a criação da sua nova conta:");
@@ -56,8 +57,9 @@ public class teste {
 			} else if (opcao == 3) {
 				System.out.println("Selecionada a opcao Transferencia. Digite a quantia que deseja transferir:");
 				double valorTransf = scanner.nextDouble();
-				//conta.transferir(valorTransf, conta, conta);
+				conta.transferir(valorTransf, conta2);
 				System.out.println("Transferencia realizada, valor atual de: " + conta.saldo);
+				System.out.println("Saldo Conta 2: " + conta2.saldo);
 
 			} else if (opcao == 4){
 				System.out.println("Programa finalizado");
